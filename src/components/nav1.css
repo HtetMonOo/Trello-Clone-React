@@ -1,0 +1,29 @@
+#nav1 {  
+    background-color: rgb(75, 68, 68);
+    opacity: 0.5; 
+    position: relative; 
+}
+#search {
+    background: transparent;
+    outline: none; 
+    border: none;
+}
+#trello-link {
+    position: absolute;
+    right: 50%;
+    background-color: transparent;
+    font-size: x-large;
+    color: #cccccc;
+    font-family: Lobster-Regular;
+    transition: all 300ms ease-in-out;
+}
+#trello-link>i {
+    font-size: x-large;
+}
+#trello-link:hover {
+    color: #fff;
+    background-color: transparent;
+}
+#nav1>div>:nth-child(n):hover {
+    background: rgba(233, 236, 238, 0.1);
+}

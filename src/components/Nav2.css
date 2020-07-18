@@ -1,0 +1,19 @@
+#nav2 {
+    padding: 5px 0;
+}
+#nav2>div>:nth-child(n) {
+    color: rgb(33, 10, 80);
+}
+#nav2>div>div {
+    background-color: transparent;
+}
+#board-name {
+    font-weight: 500;
+    font-size: larger;
+}
+#nav1>div>:nth-child(n):hover {
+    background: rgba(233, 236, 238, 0.1);
+}
+#nav2>div>a:hover {
+    background: rgba(233, 236, 238, 0.5);
+}

@@ -1,0 +1,21 @@
+.editCard button {
+    display: block;
+}
+.editCard div div {
+    background: rgba(0,0,0,.6);
+    border-radius: 3px;
+    clear: both;
+    color: #e6e6e6;
+    display: block;
+    margin: 0 0 4px 7px;
+    padding: 6px 12px 6px 8px;
+    text-decoration: none;
+    transition: margin 85ms ease-in-out;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.editCard div div:hover {
+    color: #fff;
+    margin-left: 12px;
+}

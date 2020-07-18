@@ -1,0 +1,62 @@
+.ListAction {
+    background-color: #fff;
+    border-radius: 3px;
+    border: #f4f5f7 solid 1px;
+    color: #172b4d;
+    width: 350px;
+    position: absolute;
+    top: 45px;
+    left:0;
+    z-index: 10;
+    box-shadow: rgba(0,0,0,0.1) 1px 1px 30px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.ListAction::-webkit-scrollbar {
+    display: none;
+}
+.ListAction>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ListAction h5 {
+    text-align: center;
+    width: 310px;
+    padding: 0;
+    margin: 8px 0 0 0 !important;
+}
+.ListAction>:nth-child(n){
+    padding: 8px 10px;
+    cursor: pointer;
+}
+.ListAction :last-child {
+    margin-bottom: 10px;
+}
+.ListAction div:hover {
+    background: rgba(233, 236, 238, 0.5);
+}
+.ListAction :first-child {
+    cursor: default;
+}
+.ListAction :first-child:hover {
+    background-color: inherit;
+}
+.line {
+    margin: 0 10px !important;
+    padding: 0 !important;
+    background-color: rgba(9,30,66,.13);
+    height: 1px;
+    width: 330px;
+    display: inline-block;
+    line-height: 0;
+  }
+.ListAction i {
+    color:  rgba(17, 38, 73, 0.377);
+    font-size: larger;
+    padding: 10px 20px 0 20px !important;
+    transition: color 200ms ease-in-out;
+}
+.ListAction i:hover {
+    color: #081b3a; 
+}

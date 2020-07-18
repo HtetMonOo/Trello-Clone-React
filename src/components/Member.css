@@ -1,0 +1,15 @@
+#member, #userp {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #ebecf0;
+    justify-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3px;
+    cursor: pointer;
+}
+#member>p {
+    font-weight: 600;
+}

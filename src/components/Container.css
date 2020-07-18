@@ -1,0 +1,48 @@
+#container {
+    display: flex;
+    color: rgb(33, 10, 80);
+    align-items: flex-start;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    max-height: calc(100vh - 100px);
+    height: 100vh;
+}
+#container>div>span {
+    overflow-y: scroll;
+    max-height: 600px;
+}
+#container::-webkit-scrollbar, #container>div>span::-webkit-scrollbar {
+    display: none;
+}
+#container>div, #list-input {
+    cursor: pointer;
+    min-width: 270px;
+    max-width: 270px;
+    background-color: #ebecf0;
+    margin-left: 10px;
+    border-radius: 3px;
+}
+#container>:last-child {
+    background-color: transparent;
+    padding: 0;
+    position: relative;
+}
+#container>div>div {
+    display: flex;
+    justify-content: space-between;
+}
+#container>div>:first-child {
+    margin: 0 7px;
+}
+#container>div>div>label {
+    font-weight: 500;
+    cursor: pointer;
+    flex: 1 0 auto;
+    padding-top: 10px !important;
+} 
+#container>div>div>i {
+    padding: 12px 10px !important;
+}
+#container>div>div:not(:last-child) {
+    margin-bottom: 10px !important;
+}

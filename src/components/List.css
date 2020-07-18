@@ -1,0 +1,30 @@
+.listTitle {
+    min-width: 200px;
+    max-width: 200px;
+    padding: 3px 10px;
+    outline: none;
+    background-color: #ebecf0;
+    border-color: transparent;
+    font-weight: 500;
+    color: rgb(33, 10, 80);
+    cursor: inherit;
+}
+.listTitle:focus {
+    border: solid 2px rgb(65, 93, 155);
+    background-color: #fff;
+    cursor: text;
+}
+.edit {
+    border-radius: 3px;
+    margin-top: 2px;
+    transition: color 300ms ease-in-out;
+    cursor: pointer;
+}
+.edit:hover {
+    background-color: rgba(9,30,66,.08);
+    color: #172b4d;
+}
+.list>div>i {
+    position: relative;
+}
+

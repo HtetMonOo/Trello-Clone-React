@@ -1,0 +1,50 @@
+#add-card{
+    position: relative;
+    padding: 0;
+}
+#add-card>a {
+    color: #5e6c84;
+    display: block;
+    padding: 3px;
+    margin: 0 7px 10px 7px;
+    border-radius: 3px;
+    transition: color 300ms ease-in;
+}
+#add-card>:first-child {
+    flex: 1 0 auto;
+}
+#add-card>a:hover {
+    background-color: rgba(9,30,66,.08);
+    color: #172b4d;
+}
+#card-input {
+    z-index: 3; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ebecf0;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    width: 270px;  
+    transition: all 300ms ease-in-out;
+}
+#card-input>textarea {
+    width: 242px;
+    padding: 7px;
+    border-radius: 3px;
+    resize: none;
+    border-color: white;
+    margin: 0 7px 10px 7px;
+    box-shadow: rgb(197, 192, 192) 0px 2px 0.1px ;
+}
+#card-input>textarea:focus {
+    outline: none;
+}
+#card-input>div {
+    margin: 0 7px 10px 7px;
+}
+#card-input i  {
+    margin-left: 5px;
+    margin-top: 2px;
+    font-size: 20px;
+}

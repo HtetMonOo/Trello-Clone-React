@@ -1,0 +1,89 @@
+#card-info {
+    width: 78%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+#card-info>div {
+    display: flex;
+    margin-bottom: 20px;
+}
+#card-info>div>i {
+    padding: 10px 15px 5px 5px;
+    font-size: 16px;
+}
+#card-info>div>div {
+    flex: 1 1 auto;
+}
+
+#comment {
+    flex: 1 1 auto;
+    margin: 0  0 0 10px;
+    border: none;
+    padding: 8px 10px;
+}
+h1,h2 {
+    font-weight: 600;
+    line-height: 33px;
+    font-size: 20px;
+    color: #172b4d;
+    margin: 0;
+}
+h2 {
+    font-size: 16px;
+    padding-right: 15px;
+}
+p {
+    margin: 0;
+}
+#card-info button {
+    background-color: #ebecf0;
+    border-radius: 3px;
+    padding: 5px 10px;
+    transition: background-color 300ms ease-in-out;
+}
+#card-info button:hover {
+    background: rgba(9,30,66,.08);
+}
+#parent-list {
+    text-decoration: underline;
+    padding: 0 !important;
+    background-color: transparent !important; 
+}
+#parent-list:hover{
+    background-color: transparent !important;
+}
+#mem-label-wrapper {
+    display: flex;
+    margin-top: 10px;
+}
+#card-labels>div>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 30px;
+    border-radius: 3px;
+    margin-right: 3px;
+    color: white;
+}
+#card-labels>div>:last-child {
+    background-color: #ebecf0;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    color: inherit;
+}
+.wrapper {
+    width: 100%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+}
+#card-members {
+    margin-right: 15px;
+}
+#member>i, .fa-plus {
+    font-weight: 600;
+}
