@@ -6,10 +6,9 @@ import Axios from 'axios'
 import AddCard from './AddCard'
 import ListAction from './ListAction'
 
-const List = (props) => {
+const List = ({list, deleteList}) => {
 
-    const [list, setList] = useState(props.list)
-    const [listTitle, setListTitle] = useState(list.title)
+    const [listTitle, setListTitle] = useState(list.title);
     const [cards, setCards] = useState(list.cards)
     const [addCardClick, setAddCardClick] = useState(false)
     const [editListClick, setEditListClick] = useState(false)
@@ -41,9 +40,8 @@ const List = (props) => {
     }
     
     const addNewCard = (newCard) => {
-        list.cards.push(newCard)
+        //list.cards.push(newCard)
         addCard();
-        setList(list)
     }
 
     const editList = () => {
@@ -63,7 +61,7 @@ const List = (props) => {
                 <input type="text" ref={inputRef} className="listTitle" value={listTitle} onChange={handelInput} onKeyPress={handelInput}/>
                 <i className="fas fa-ellipsis-h edit" onClick={editList}>
                 {
-                    editListClick && <ListAction list={props.list} delete={props.deleteList}/>
+                    editListClick && <ListAction list={list} delete={deleteList}/>
                 }
                 </i>
                 

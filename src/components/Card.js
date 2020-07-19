@@ -62,7 +62,7 @@ const Card = (props) => {
                 </div>
             </div>
         </div>
-            <Modal card={card} show={show} close={showModal} updateCard={updateCard}/>
+            {show && <Modal card={card} show={show} close={showModal} updateCard={updateCard}/>}
             {
                 editCardClick && 
                 <EditCard pos={pos} card={card} updateCard={updateCard} archive={props.delete} showEditCard={showEditCard}/>
