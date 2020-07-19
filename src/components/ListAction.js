@@ -6,9 +6,13 @@ import Axios from 'axios'
 const ListAction = (props) => {
 
     const deleteList = () => {
-        const url = appendApiKey("lists/"+props.list.id)
+        const url = appendApiKey("list/"+props.list.id)
         Axios.delete(url)
-        .then(props.delete(props.list.id))
+        .then(res => {
+            props.delete(props.list.id);
+        }).catch(err => {
+            console.log("fail to delete");
+        });
     }
     return (
         <div className="ListAction">
