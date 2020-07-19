@@ -1,7 +1,9 @@
 import React from 'react'
 import './CardUpdate.css'
+import CardChecklist from './CardChecklist'
 
 const CardUpdate = () => {
+
     return (
         <div id="card-update">
                 <div>
@@ -22,10 +24,7 @@ const CardUpdate = () => {
                     &nbsp; <i className="fas fa-tag"></i>
                     &nbsp; <label>Labels</label>
                 </div>
-                <div className="card-update-item">
-                    &nbsp; <i className="far fa-check-square"></i>
-                    &nbsp; <label>Checklist</label>
-                </div>
+                <CardChecklist />
                 <div className="card-update-item">
                     &nbsp; <i className="far fa-clock"></i>
                     &nbsp; <label>Due Date</label>
@@ -56,14 +55,14 @@ const CardUpdate = () => {
                     &nbsp; <label>Copy</label>
                 </div>
                 <div className="card-update-item">
-                    &nbsp; <i className="fas fa-money-check"></i>
+                    <i className="fas fa-money-check"></i>
                     &nbsp; <label>Make Template</label>
                 </div>
                 <div className="card-update-item">
                     &nbsp; <i className="far fa-eye"></i>
                     &nbsp; <label>Watch</label>
                 </div>
-                <span className="line"></span>
+                <span className="line" id="line"></span>
                 <div className="card-update-item">
                     &nbsp; <i className="fas fa-archive"></i>
                     &nbsp; <label>Archive</label>

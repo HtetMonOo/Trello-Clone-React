@@ -22,9 +22,8 @@
     margin: 5px 0;
 }
 #line {
-    background-color:#ebecf0;
-    height: 2px;
-    margin-bottom: 8px;
+    margin: 5px 0 !important;
+    width: 100% !important;
 }
 #setting {
     cursor: pointer;
