@@ -1,9 +1,10 @@
 import React from 'react'
 import './CardInfo.css'
-import Member from './Member'
-import Label from './Label'
+import Description from './Description'
+import CardMembers from './CardMembers'
+import CardLabels from './CardLabels'
 
-const CardInfo = ({card}) => {
+const CardInfo = ({card, updateCard}) => {
     return (
         <div id="card-info"> 
             <div>
@@ -12,47 +13,19 @@ const CardInfo = ({card}) => {
                         <h1>{card.title}</h1>
                         <p>in list <button id="parent-list">{card.list.title}</button></p>
                         <div id="mem-label-wrapper">
-                            {card.members.length!==0 ? <div id="card-members">
-                                <h3>MEMBERS</h3>
-                                <div style={{display: 'flex'}}>
-                                {
-                                    card.members &&
-                                    card.members.map(mem => (
-                                        <Member key={mem.id} member={mem} />
-                                    ))
-                                }
-                                    <div id="member">
-                                        <i className="fas fa-plus"></i>
-                                    </div>
-                                </div>
-                                </div> : ""}
-                            {card.labels.length!==0 ? <div id="card-labels">
-                                <h3>LABELS</h3>
-                                <div style={{display: "flex"}}>
-                                {
-                                    card.labels &&
-                                    card.labels.map(label => ( 
-                                        <Label key={label.id} label={label} name={label.name}/>
-                                    ) )
-                                }
-                                    <div id="label">
-                                        <i className="fas fa-plus"></i>
-                                    </div>
-                                </div>
-                                </div> : ""}
+                            {   
+                                card.members && <CardMembers card={card} /> 
+                            }
+                            {   
+                                card.labels && <CardLabels card={card} /> 
+                            }
                         </div>
                     </div>
                 </div>
-                <div>
-                    <i className="fas fa-align-left"></i>
-                    <div>
-                        <div style={{display: "flex"}}> 
-                            <h2>Description</h2>
-                            <button>Edit</button>
-                        </div>
-                        <p>{card.description}</p>
-                    </div>
-                </div>
+                <Description card={card} updateCard={updateCard}/>
+                
+                {
+                    card.attachments && 
                 <div>
                     <i className="fas fa-paperclip"></i>
                     <div>
@@ -61,6 +34,9 @@ const CardInfo = ({card}) => {
                         <button>Add an attachment</button>
                     </div>
                 </div>
+                }
+                {
+                    card.checklist &&
                 <div>
                     <i className="far fa-check-square"></i>
                     <div>
@@ -70,7 +46,8 @@ const CardInfo = ({card}) => {
                         </div>
                         <p></p>
                     </div>
-                    </div>
+                </div>
+                }
                     <div>
                         <i className="fas fa-list-ul"></i>
                         <div className="wrapper">

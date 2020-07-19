@@ -13,7 +13,16 @@ const EditCard = (props) => {
 
     const edit = (e) => {
         e.preventDefault();
-        props.editCardTitle(cardTitle);
+        const data = {
+            id: props.card.id,
+            title: cardTitle,
+            description: props.card.description,
+            list: {
+                id: props.card.list.id
+            }
+         }
+         props.showEditCard();
+        props.updateCard(data);
     }
     return (
         <div className="modal2" style={{overflow: "hidden !important"}}>

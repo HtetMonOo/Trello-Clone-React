@@ -33,6 +33,7 @@ h1,h2 {
 h2 {
     font-size: 16px;
     padding-right: 15px;
+    margin-bottom: 15px !important;
 }
 p {
     margin: 0;

@@ -23,7 +23,7 @@ const AddCard = ({listId, add, close, newCard}) => {
             }
         }
         const url = appendApiKey("cards")
-        Axios.post(url,data)
+        Axios.post(url, data)
         .then( res => {
             newCard(res.data)
         })

@@ -29,17 +29,11 @@ const Card = (props) => {
         setEditCardClick(!editCardClick)
     }
 
-    const editCardTitle =(cardTitle) =>{
+    const updateCard =(data) =>{
         const url = appendApiKey("cards")
-            Axios.put(url,{
-                id: card.id,
-                title: cardTitle,
-                list: {
-                    id: card.list.id
-                }
-             }).then( res =>{
+            Axios.put(url, data)
+            .then( res =>{
                 setCard(res.data);
-                showEditCard();
             })
     }
 
@@ -68,10 +62,10 @@ const Card = (props) => {
                 </div>
             </div>
         </div>
-            <Modal card={card} show={show} close={showModal}/>
+            <Modal card={card} show={show} close={showModal} updateCard={updateCard}/>
             {
                 editCardClick && 
-                <EditCard pos={pos} card={card} editCardTitle={editCardTitle} archive={props.delete} showEditCard={showEditCard}/>
+                <EditCard pos={pos} card={card} updateCard={updateCard} archive={props.delete} showEditCard={showEditCard}/>
             }
         </>
     )

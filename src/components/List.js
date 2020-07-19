@@ -33,9 +33,7 @@ const List = (props) => {
                 id: list.id,
                 title: e.target.value,
                 position: list.position
-            }).then(res => 
-                console.log(res)
-            )      
+            })    
     }
 
     const addCard = () => {

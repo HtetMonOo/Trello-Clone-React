@@ -15,18 +15,6 @@
 #card-update>:first-child:hover {
     background-color: transparent;
 }
-#card-update>div {
-    cursor: pointer;
-    background-color:#ebecf0;
-    margin-left: 0;
-    border-radius: 3px;
-    padding: 10px 10px;
-    margin: 4px 0;
-    transition: background-color 300ms ease-in-out;
-}
-#card-update>div:hover, #setting:hover {
-    background-color: rgba(9,30,66,.08);
-}
 #card-update>button {
     text-decoration: underline;
     display: flex;

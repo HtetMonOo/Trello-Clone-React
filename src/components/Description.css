@@ -1,0 +1,18 @@
+#add-description {
+    width: 100%;
+    background-color: #f4f5f7;
+    transition: all 200ms ease-in-out;
+}
+#add-description>textarea {
+    border-radius: 3px;
+    resize: none;
+    outline: none;
+    width: 95%;
+    height: 108px;
+    border: solid 1px rgba(9,30,66,.13);
+    margin-bottom: 10px;
+    padding: 10px;
+}
+#add-description>textarea:focus {
+    border-color: rgb(106, 155, 240);
+}

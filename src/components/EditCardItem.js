@@ -26,7 +26,7 @@ const EditCardItem = ({card, archive, showEdit}) => {
                     &nbsp;&nbsp; <label>Change Members</label>
                 </div>
                 <div>
-                    &nbsp; <i className="fas fa-move"></i>
+                    &nbsp; <i className="fas fa-arrow-right"></i>
                     &nbsp;&nbsp; <label>Move</label>
                 </div>
                 <div>

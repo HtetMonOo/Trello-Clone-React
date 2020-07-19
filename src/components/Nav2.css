@@ -2,7 +2,7 @@
     padding: 5px 0;
 }
 #nav2>div>:nth-child(n) {
-    color: rgb(33, 10, 80);
+    color: #fff;
 }
 #nav2>div>div {
     background-color: transparent;
